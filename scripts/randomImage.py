@@ -1,8 +1,6 @@
 import random, subprocess, glob
 from pathlib import Path
-
-HOME_FOLDER = "jake"
-OPEN_LINK_IMAGES = False
+from config import *
 
 messages_path = "/Users/" + HOME_FOLDER + "/Library/Messages/Attachments"
 

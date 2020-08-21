@@ -5,7 +5,7 @@
 
 import tkinter as tk
 import subprocess, time
-from randomImage import *
+from scripts.randomImage import *
 
 root = tk.Tk()
 frame = tk.Frame(root)
