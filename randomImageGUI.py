@@ -22,17 +22,17 @@ def runScript():
 
 def closeMediaApps():
     if file_type == "image":
-        subprocess.call(["sh", "closePreview.sh"])
+        subprocess.call(["sh", "scripts/closePreview.sh"])
     elif file_type == "video":
-        subprocess.call(["sh", "closeQuicktime.sh"])
+        subprocess.call(["sh", "scripts/closeQuicktime.sh"])
 
 def cycleImage():
     closeMediaApps()
     runScript()
 
 def quit():
-    subprocess.call(["sh", "closeQuicktime.sh"])
-    subprocess.call(["sh", "closePreview.sh"])
+    subprocess.call(["sh", "scripts/closeQuicktime.sh"])
+    subprocess.call(["sh", "scripts/closePreview.sh"])
     root.destroy()
 
 # Buttons
